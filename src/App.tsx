@@ -9,6 +9,7 @@ function App() {
     document.querySelector('html')!.style.scrollBehavior = 'auto';
     window.scrollTo({ top: 0 });
     document.querySelector('html')!.style.scrollBehavior = '';
+    document.documentElement.classList.add('dark');
   }, [location.pathname]);
 
   return (
