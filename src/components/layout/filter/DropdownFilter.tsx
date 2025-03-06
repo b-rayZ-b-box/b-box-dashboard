@@ -70,37 +70,31 @@ function DropdownFilter({ align }: DropdownFilterProps) {
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Direct VS Indirect</span>
+                <span className="text-sm font-medium ml-2">Filter 1</span>
               </label>
             </li>
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Real Time Value</span>
+                <span className="text-sm font-medium ml-2">Filter 2</span>
               </label>
             </li>
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Top Channels</span>
+                <span className="text-sm font-medium ml-2">Filter 3</span>
               </label>
             </li>
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Sales VS Refunds</span>
+                <span className="text-sm font-medium ml-2">Filter 4</span>
               </label>
             </li>
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Last Order</span>
-              </label>
-            </li>
-            <li className="py-1 px-3">
-              <label className="flex items-center">
-                <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Total Spent</span>
+                <span className="text-sm font-medium ml-2">Filter 5</span>
               </label>
             </li>
           </ul>
