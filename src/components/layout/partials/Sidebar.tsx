@@ -193,16 +193,16 @@ function Sidebar({ sidebarOpen, setSidebarOpen, variant = 'default' }: SidebarPr
         <div className="pt-3 hidden lg:inline-flex 2xl:hidden justify-end mt-auto">
           <div className="w-12 pl-4 pr-3 py-2">
             <Tooltip
-              tooltipTitle={<span>{sidebarOpen ? 'Expand' : 'Close'}</span>}
+              size="sm"
+              cursor="pointer"
+              tooltipTitle={<span>{sidebarExpanded ? 'Collapse' : 'Expand'}</span>}
               children={
                 <button
                   className="text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                   onClick={() => (sidebarOpen ? setSidebarOpen(false) : setSidebarExpanded(!sidebarExpanded))}
                 >
-                  <span className="sr-only">Expand / collapse sidebar</span>
-
                   <svg
-                    className="shrink-0 fill-current text-gray-400 dark:text-gray-500 sidebar-expanded:rotate-180"
+                    className={`shrink-0 fill-current text-gray-400 dark:text-gray-500 transition-transform duration-200 ${sidebarExpanded ? 'rotate-180' : ''}`}
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
