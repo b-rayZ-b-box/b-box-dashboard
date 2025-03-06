@@ -59,7 +59,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, variant = 'default' }: SidebarPr
       {/* Sidebar backdrop (mobile only) */}
       <div
         className={`fixed inset-0 bg-gray-900/30 z-40 lg:hidden lg:z-auto transition-opacity duration-200 ${
-          sidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          sidebarOpen || sidebarExpanded ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         aria-hidden="true"
       ></div>
